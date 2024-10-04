@@ -1,4 +1,5 @@
 import React from 'react';
+import AddToPlaylist from './AddToPlaylist';
 
 const Song = ({ title, artist, album, duration }) => {
   return (
@@ -7,6 +8,8 @@ const Song = ({ title, artist, album, duration }) => {
       <p>Artist: {artist}</p>
       <p>Album: {album}</p>
       <p>Duration: {duration}</p>
+
+      <AddToPlaylist songTitle={title} />
     </div>
   );
 };

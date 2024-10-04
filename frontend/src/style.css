@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    color:rgb(215, 209, 230); /* Sets background color to blue and text color to white */
+    font-family:cursive; /* Sets the font */
+    background-color: rgb(94, 49, 218);
+    
+  }

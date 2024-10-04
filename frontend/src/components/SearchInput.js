@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function SearchInput  ()  {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
-    console.log('Searching for:', searchTerm);
+const SearchInput = ({ onSearchChange }) => {
+  const handleInputChange = (event) => {
+    onSearchChange(event.target.value); 
   };
 
   return (
-    <input type="text" placeholder="Search..." value={searchTerm} onChange={handleSearch} />
+    <div className="search-input">
+      <input
+        type="text"
+        placeholder="Search songs or playlists..."
+        onChange={handleInputChange}
+      />
+    </div>
   );
 };
 

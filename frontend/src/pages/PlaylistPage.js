@@ -9,7 +9,7 @@ function PlaylistPage ()  {
   return (
     <div className="playlist-page">
         <h1>Playlist Page</h1>
-        <p>Playlist ID: {id}</p>
+        <p>user: {id}</p>
       <Playlist /> 
       <Comments/>  
     </div>
